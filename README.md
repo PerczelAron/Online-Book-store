@@ -203,13 +203,6 @@ This project demonstrates:
 
     Data quality remediation (email fixes, NULL-handling, duplicate removal)
 
-✨ Project Status
-
-    ✔ Completed
-    ✔ Fully documented
-    ✔ Ready for review
-    ✔ Suitable for LinkedIn and portfolio highlights
-
 👤 About Me
 
     I’m Áron Perczel – an aspiring Database Developer & Data Engineer with a strong interest in:
