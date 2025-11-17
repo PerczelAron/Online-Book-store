@@ -151,8 +151,8 @@ The guide includes:
     ✔ Networking configuration
     ✔ Secure user & role setup
     ✔ Migration steps
-    ✔ Cost-optimization tips (important for portfolio projects)
-
+    ✔ Cost-optimization tips
+    
 🖼️ 9. Screenshots
 
 📁 screenshots/
