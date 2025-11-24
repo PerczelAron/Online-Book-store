@@ -1,6 +1,6 @@
 📚 Bookstore Database Project
 
-End-to-End Relational Database Implementation (MySQL · Python · Cloud · Data Governance)
+End-to-End Relational Database Implementation (MySQL · Python · Data Governance)
 By: Aron Perczel
 
 ⭐ Project Overview
@@ -19,8 +19,6 @@ This project is a complete, production-style implementation of a bookstore relat
 
     Security & role-based access control
 
-    Cloud deployment (Azure)
-
     Data governance & data quality handling
 
 The goal is to showcase real-world database developer and data engineering competence through an end-to-end, fully documented project.
@@ -29,7 +27,7 @@ The goal is to showcase real-world database developer and data engineering compe
 
 The project includes a complete ER diagram and schema export created using dbdiagram.io.
 
-📁 data_model/
+📁 1. data_model/
 
     bookstore_er_diagram.png
 
@@ -41,7 +39,7 @@ The model follows normalized design (3NF), supports multiple genres per book, wa
 
 🗄️ 2. MySQL Schema
 
-📁 mysql_schema/
+📁 2. mysql_schema/
 Key files:
 
     create_tables.sql
@@ -59,30 +57,11 @@ Includes:
     ✔ Indexing strategy
     ✔ Governance notes on referential integrity & quality
 
-🧹 3. Python Data Loading & Cleaning
-
-📁 python_scripts/
-
-    data_cleaning.ipynb
-
-    load_data_to_mysql.ipynb
-
-    mysql_connection_setup.py
-
-    requirements.txt
-
-Capabilities:
-    ✔ Detection of invalid emails
-    ✔ Missing value handling
-    ✔ Duplicate removal
-    ✔ Automatic type correction
-    ✔ Safe MySQL loading via mysql-connector-python
-
-📊 4. Sample Data (CSV)
+📊 3. Sample Data (CSV)
 
 Realistic data for all tables, including well-known authors and book titles, plus intentionally injected data quality issues to demonstrate governance skills.
 
-📁 sample_data/
+📁 3. sample_data/
 Includes:
 
     authors.csv
@@ -103,9 +82,29 @@ Includes:
 
     inventory.csv
 
+
+🧹 4. Python Data Loading & Cleaning
+
+📁 4. python_scripts/
+
+    data_cleaning.ipynb
+
+    load_data_to_mysql.ipynb
+
+    mysql_connection_setup.py
+
+    requirements.txt
+
+Capabilities:
+    ✔ Detection of invalid emails
+    ✔ Missing value handling
+    ✔ Duplicate removal
+    ✔ Automatic type correction
+    ✔ Safe MySQL loading via mysql-connector-python
+
 ⚙️ 5. Stored Procedures
 
-📁 stored_procedures/
+📁 5. stored_procedures/
 
     sp_create_order_with_warehouse.sql
 
@@ -118,7 +117,7 @@ Features:
 
 🔄 6. Triggers
 
-📁 triggers/
+📁 6. triggers/
 
     trg_update_inventory_after_insert.sql
 
@@ -129,7 +128,7 @@ Features:
 
 👁️ 7. Views
 
-📁 views/
+📁 7. views/
 
     vw_customer_orders.sql
 
@@ -139,21 +138,7 @@ Shows:
 
     Order date
 
-☁️ 8. Cloud Deployment Guides
-
-📁 cloud_deployment_guides/
-Fully written, step-by-step guides:
-
-    azure_mysql_deployment.md
-
-The guide includes:
-    ✔ Instance creation
-    ✔ Networking configuration
-    ✔ Secure user & role setup
-    ✔ Migration steps
-    ✔ Cost-optimization tips
-    
-🖼️ 9. Screenshots
+🖼️ 8. Screenshots
 
 📁 screenshots/
 Contains documentation images:
