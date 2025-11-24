@@ -1,0 +1,107 @@
+
+Table "authors" {
+  "id" SERIAL [pk]
+  "author_name" VARCHAR(255) [not null]
+  "date_of_birth" DATE
+}
+
+Table "genres" {
+  "id" SERIAL [pk]
+  "genre" VARCHAR(100) [unique, not null]
+}
+
+Table "books" {
+  "id" SERIAL [pk]
+  "title" VARCHAR(255) [not null]
+  "release_date" DATE
+  "description" TEXT
+  "author_id" INT [not null]
+  "list_price" NUMERIC(10,2) [not null, check: `list_price >= 0`]
+}
+
+Table "books_genres" {
+  "book_id" INT [not null]
+  "genre_id" INT [not null]
+
+  Indexes {
+    (book_id, genre_id) [pk]
+  }
+}
+
+Table "customers" {
+  "id" SERIAL [pk]
+  "name" VARCHAR(255) [not null]
+  "gender" VARCHAR(10)
+  "date_of_birth" DATE
+  "postal_code" VARCHAR(10)
+  "country" VARCHAR(100)
+  "region" VARCHAR(100)
+  "city" VARCHAR(100)
+  "street" VARCHAR(100)
+  "house_no" VARCHAR(10)
+  "email_address" VARCHAR(255) [unique, not null]
+  "registration_date" TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+}
+
+Table "payments" {
+  "id" SERIAL [pk]
+  "method" VARCHAR(50) [not null]
+}
+
+Table "orders" {
+  "id" SERIAL [pk]
+  "order_date" TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+  "ship_date" TIMESTAMP
+  "customer_id" INT [not null]
+  "payment_id" INT
+  "total_items" INT [check: `total_items >= 0`]
+  "total_amount" NUMERIC(12,2) [check: `total_amount >= 0`]
+}
+
+Table "order_items" {
+  "id" SERIAL [pk]
+  "order_id" INT [not null]
+  "book_id" INT [not null]
+  "warehouse_id" INT
+  "order_quantity" INT [not null, check: `order_quantity > 0`]
+  "unit_price" NUMERIC(10,2) [not null, check: `unit_price >= 0`]
+  "unit_price_discount" NUMERIC(5,2) [check: `unit_price_discount >= 0`, default: 0]
+  "line_total" NUMERIC(12,2)
+}
+
+Table "warehouses" {
+  "id" SERIAL [pk]
+  "name" VARCHAR(100) [not null]
+  "location" VARCHAR(100)
+  "country" VARCHAR(100)
+}
+
+Table "inventory" {
+  "book_id" INT [not null]
+  "warehouse_id" INT [not null]
+  "quantity" INT [not null, check: `quantity >= 0`]
+
+  Indexes {
+    (book_id, warehouse_id) [pk]
+  }
+}
+
+Ref:"authors"."id" < "books"."author_id" [delete: cascade]
+
+Ref:"books"."id" < "books_genres"."book_id" [delete: cascade]
+
+Ref:"genres"."id" < "books_genres"."genre_id" [delete: cascade]
+
+Ref:"customers"."id" < "orders"."customer_id" [delete: cascade]
+
+Ref:"payments"."id" < "orders"."payment_id"
+
+Ref:"orders"."id" < "order_items"."order_id" [delete: cascade]
+
+Ref:"books"."id" < "order_items"."book_id" [delete: cascade]
+
+Ref:"warehouses"."id" < "order_items"."warehouse_id" [delete: cascade]
+
+Ref:"books"."id" < "inventory"."book_id" [delete: cascade]
+
+Ref:"warehouses"."id" < "inventory"."warehouse_id" [delete: cascade]
