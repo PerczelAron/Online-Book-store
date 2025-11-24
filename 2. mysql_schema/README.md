@@ -2,7 +2,7 @@ This folder contains SQL scripts used to create the relational database structur
 
 Contents:
 - `create_tables.sql` — master script that creates all tables
-- `constraints_indexes.sql` — foreign keys, unique constraints, and indexing strategy
+- `indexes.sql` — foreign keys, unique constraints, and indexing strategy
 - `sample_queries.sql` — example analytical and operational SQL queries
 - `data_governance_notes.md` — notes on referential integrity, data quality, and governance
 
