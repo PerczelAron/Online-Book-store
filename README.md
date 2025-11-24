@@ -80,8 +80,9 @@ Includes:
 
     warehouses.csv
 
-    inventory.csv
+    payments.csv
 
+    inventory.csv
 
 🧹 4. Python Data Loading & Cleaning
 
