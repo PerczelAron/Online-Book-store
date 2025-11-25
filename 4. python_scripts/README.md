@@ -4,4 +4,4 @@ Main files:
 - `book_store_etl.ipynb` — data quality checks, cleaning logic and loading of all CSV datasets into MySQL
 - `requirements.txt` — Python environment dependencies
 
-The notebooks demonstrate practical ETL steps and data governance approaches.
+The notebook demonstrate practical ETL steps and data governance approaches.
