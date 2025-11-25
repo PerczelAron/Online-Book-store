@@ -44,7 +44,7 @@ Key files:
 
     create_tables.sql
 
-    constraints_indexes.sql
+    indexes.sql
 
     sample_queries.sql
 
