@@ -139,7 +139,13 @@ Shows:
 
     Order date
 
-🖼️ 8. Screenshots
+🔐 8. Role-Based Access Control (RBAC)
+
+📁 8. permissions_and_roles/
+
+    Managing_privileges.sql
+
+🖼️ 9. Screenshots
 
 📁 screenshots/
 Contains documentation images:
@@ -174,20 +180,6 @@ Contains documentation images:
     Power BI (optional reporting)
 
     GitHub Pages
-
-🛡️ Security & Data Governance
-
-This project demonstrates:
-
-    Role-based access control (RBAC)
-
-    Read-only and data-entry user roles
-
-    GRANT / REVOKE logic
-
-    Referential integrity validation
-
-    Data quality remediation (email fixes, NULL-handling, duplicate removal)
 
 👤 About Me
 
