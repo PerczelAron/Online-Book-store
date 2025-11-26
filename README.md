@@ -70,7 +70,7 @@ Includes:
 
     genres.csv
 
-    books_genres.csv
+    book_genres.csv
 
     customers.csv
 
