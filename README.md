@@ -1,7 +1,5 @@
 ![Bookstore Database Banner](assets/hero.png)
 
-📚 Bookstore Database Project
-
 End-to-End Relational Database Implementation (MySQL · Python · Data Governance)
 By: Aron Perczel
 
