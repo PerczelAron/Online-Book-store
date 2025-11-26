@@ -1,70 +1,89 @@
-# Bookstore Database Project  
-*A complete SQL + Python ETL + Data Governance portfolio project*
+![Bookstore Database Banner](assets/hero.png)
 
-![Hero Banner](assets/hero.png)
+End-to-End Relational Database Implementation (MySQL · Python · Data Governance)
+By: Aron Perczel
 
----
+⭐ Project Overview
 
-## 📌 Overview
+This project is a complete, production-style implementation of a bookstore relational database system, designed to demonstrate practical skills in:
 
-This project is a full end-to-end database engineering showcase built for a fictional online bookstore.  
-It demonstrates skills required for a **Database Developer**, **Data Engineer**, or **SQL Specialist** role:
+    Database modeling (ERD, normalization)
 
-- Normalized relational data modeling (ERD)
-- MySQL database implementation
-- Python ETL pipeline with data cleaning
-- Role-based access control (RBAC)
-- Stored procedures, triggers, views
-- Data governance, data quality validation
-- Cloud deployment options (Azure, AWS, GCP, Snowflake)
-- Professional documentation + GitHub Pages presentation
+    SQL schema creation (MySQL)
 
----
+    Python-based data loading and cleaning
 
-## 🗂️ Project Structure
+    Stored procedures, triggers & views
 
-- data_model/ → ER diagram, DBML, schema
-- mysql_schema/ → CREATE TABLE scripts, constraints, indexes
-- sample_data/ → CSV sample data (100+ books, authors, customers)
-- python_scripts/ → ETL pipeline (pandas + SQLAlchemy)
-- stored_procedures/ → Order creation logic
-- triggers/ → Inventory update safety trigger
-- views/ → Analytical SQL views
-- permissions_and_roles/ → RBAC documentation
+    Indexing and performance considerations
+
+    Security & role-based access control
+
+    Data governance & data quality handling
+
+The goal is to showcase real-world database developer and data engineering competence through an end-to-end, fully documented project.
 
 ---
 
-## 🧩 Entity–Relationship Diagram (ERD)
+## 📐 Data Model
 
-Below is the database structure designed for normalized OLTP workloads:
+The project includes a complete ER diagram and schema export created using dbdiagram.io.
 
 ![ER Diagram](assets/er_diagram.jpg)
 
-Key features:
-- Many-to-many book–genre relationship  
-- Warehouse-level inventory  
-- Multi-item orders  
-- Referential integrity with foreign keys  
-- Optimized indexing strategy  
+The model follows normalized design (3NF), supports multiple genres per book, warehouse-level inventory tracking, and a realistic order management workflow.
 
 ---
 
-## 🔄 ETL Pipeline (Python)
+## 🗄️ MySQL Schema
 
-A complete ETL process was built in Python using:
+Includes:
+    ✔ Primary & foreign keys
+    ✔ Junction tables (books_genres)
+    ✔ Composite keys (inventory)
+    ✔ Indexing strategy
+    ✔ Governance notes on referential integrity & quality
 
-- **pandas** for data cleaning  
-- **openpyxl** for Excel exports  
-- **SQLAlchemy** + **mysql-connector-python** for database loading  
-- **dotenv** for secure credential handling  
+---
 
-Main scripts:
-1. `01_load_csv.py` – Load raw CSVs  
-2. `02_clean_data.py` – Data validation & cleaning  
-3. `03_export_excel.py` – Optional Excel verification  
-4. `04_load_to_mysql.py` – Bulk upload into MySQL  
+## 📊 Sample Data (CSV)
 
-Logs and quality checks ensure reliable ingestion.
+Realistic data for all tables, including well-known authors and book titles, plus intentionally injected data quality issues to demonstrate governance skills.
+
+---
+
+## 🧹 Python Data Loading & Cleaning
+
+Capabilities:
+    ✔ Detection of invalid emails
+    ✔ Missing value handling
+    ✔ Duplicate removal
+    ✔ Automatic type correction
+    ✔ Safe MySQL loading via pymysql
+
+---
+
+## ⚙️ Stored Procedures
+
+Features:
+    ✔ Transaction handling
+    ✔ Multi-item orders
+    ✔ Error checks
+
+---
+
+## 🔄 Triggers
+
+Features:
+    ✔ Backup mechanism
+    ✔ Prevents double-deduction
+    ✔ Ensures consistency when orders bypass stored procedures
+
+---
+
+## 👁️ Views
+
+`vw_customer_orders` joins customers, orders, and ordered books into a single analytical structure.
 
 ---
 
@@ -77,70 +96,45 @@ Two database users were created following the *principle of least privilege*:
 | `readonly_user`  | SELECT only |
 | `data_entry_user`| INSERT into orders + order_items |
 
-Permissions were tested using `GRANT` and `REVOKE` to verify isolation.
-
-Full documentation:  
-`permissions_and_roles/rbac_readme.md`
-
 ---
 
-## ⚙️ Stored Procedures & Triggers
+🧑‍💻 Technologies Used
+    Databases
 
-### Stored Procedure: `sp_create_order`
-Handles:
-- Order creation  
-- Multi-item order insertion  
-- Warehouse-level inventory deduction  
-- Transaction-safe logic  
-- Error handling  
+    MySQL
 
-### Trigger
-Automatic inventory update when order_items are inserted outside the procedure.
+    Programming
 
-### View
-`vw_customer_orders` joins customers, orders, and ordered books into a single analytical structure.
+    Python: Pandas, pymysql
 
----
+    Tools
 
-## 🌐 Cloud Deployment Guides
+    dbdiagram.io
 
-Deployment instructions included for:
-- **Azure Database for MySQL**
-- **AWS RDS MySQL**
-- **GCP Cloud SQL**
-- **Snowflake** (analytical warehouse layer)
+    MySQL Workbench
 
-Guides contain:
-- Instance setup  
-- Security and networking  
-- Migration steps  
-- Cost optimization  
+👤 About Me
 
----
+    I’m Áron Perczel – an aspiring Database Developer & Data Engineer with a strong interest in:
 
-## 🏁 Summary
+    database design
 
-This project is designed as a complete, production-style demonstration of:
+    SQL development
 
-- Database modeling  
-- SQL development  
-- Python ETL  
-- Governance and data quality  
-- Best practices in security and documentation  
+    cloud data platforms
 
-It serves as a real-world portfolio piece for database engineering positions.
+    data governance
 
----
+    cooperative work with data science teams
 
-## 🔗 GitHub Repository
+📫 Contact
 
-👉 View the full project on GitHub:  
-**https://github.com/USERNAME/REPO_NAME**
+    📧 Email: perczel.aron@gmail.com
 
-*(Replace with your actual repository link.)*
+    🔗 LinkedIn: https://www.linkedin.com/in/aronperczel/
 
----
+🎉 Thank you for reviewing this project!
 
-## 🙌 Contact
+Feel free to explore the folders, scripts, and documentation.
 
-If you have any questions or feedback, feel free to reach out via LinkedIn — I'm always happy to discuss data engineering and database design topics.
+[![View on GitHub](https://img.shields.io/badge/View%20Source%20on-GitHub-black?style=for-the-badge&logo=github)](https://github.com/PerczelAron/Online-Book-store)
