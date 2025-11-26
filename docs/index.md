@@ -23,15 +23,14 @@ It demonstrates skills required for a **Database Developer**, **Data Engineer**,
 
 ## 🗂️ Project Structure
 
-data_model/ → ER diagram, DBML, schema
-mysql_schema/ → CREATE TABLE scripts, constraints, indexes
-sample_data/ → CSV sample data (100+ books, authors, customers)
-python_scripts/ → ETL pipeline (pandas + SQLAlchemy)
-stored_procedures/ → Order creation logic
-triggers/ → Inventory update safety trigger
-views/ → Analytical SQL views
-permissions_and_roles/ → RBAC documentation
-docs/ → GitHub Pages site (this page)
+- data_model/ → ER diagram, DBML, schema
+- mysql_schema/ → CREATE TABLE scripts, constraints, indexes
+- sample_data/ → CSV sample data (100+ books, authors, customers)
+- python_scripts/ → ETL pipeline (pandas + SQLAlchemy)
+- stored_procedures/ → Order creation logic
+- triggers/ → Inventory update safety trigger
+- views/ → Analytical SQL views
+- permissions_and_roles/ → RBAC documentation
 
 ---
 
