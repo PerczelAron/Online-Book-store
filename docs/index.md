@@ -38,11 +38,11 @@ The model follows normalized design (3NF), supports multiple genres per book, wa
 ## 🗄️ MySQL Schema
 
 Includes:
-    ✔ Primary & foreign keys
-    ✔ Junction tables (books_genres)
-    ✔ Composite keys (inventory)
-    ✔ Indexing strategy
-    ✔ Governance notes on referential integrity & quality
+- Primary & foreign keys
+- Junction tables (books_genres)
+- Composite keys (inventory)
+- Indexing strategy
+- Governance notes on referential integrity & quality
 
 ---
 
@@ -55,20 +55,20 @@ Realistic data for all tables, including well-known authors and book titles, plu
 ## 🧹 Python Data Loading & Cleaning
 
 Capabilities:
-    ✔ Detection of invalid emails
-    ✔ Missing value handling
-    ✔ Duplicate removal
-    ✔ Automatic type correction
-    ✔ Safe MySQL loading via pymysql
+- Detection of invalid emails
+- Missing value handling
+- Duplicate removal
+- Automatic type correction
+- Safe MySQL loading via pymysql
 
 ---
 
 ## ⚙️ Stored Procedures
 
-Features:
-    ✔ Transaction handling
-    ✔ Multi-item orders
-    ✔ Error checks
+Handles:
+- Order creation  
+- Multi-item order insertion  
+- Transaction-safe logic  
 
 ---
 
