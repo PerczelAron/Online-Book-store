@@ -139,19 +139,6 @@ Shows:
 
     managing_privileges.sql
 
-🖼️ 9. Screenshots
-
-📁 screenshots/
-Contains documentation images:
-
-    ER diagram
-
-    Workbench table view
-
-    Stored procedure executions
-
-    Query outputs
-
 🧑‍💻 Technologies Used
     Databases
 
