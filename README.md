@@ -159,7 +159,7 @@ Contains documentation images:
 
     Programming
 
-    Python: Pandas, NumPy, pymysql
+    Python: Pandas, pymysql
 
     Tools
 
