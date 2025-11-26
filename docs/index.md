@@ -38,7 +38,7 @@ It demonstrates skills required for a **Database Developer**, **Data Engineer**,
 
 Below is the database structure designed for normalized OLTP workloads:
 
-![ER Diagram](assets/er_diagram.png)
+![ER Diagram](assets/er_diagram.jpg)
 
 Key features:
 - Many-to-many book–genre relationship  
