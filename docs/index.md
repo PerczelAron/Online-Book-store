@@ -3,7 +3,7 @@
 End-to-End Relational Database Implementation (MySQL · Python · Data Governance)
 By: Aron Perczel
 
-⭐ Project Overview
+## ⭐ Project Overview
 
 This project is a complete, production-style implementation of a bookstore relational database system, designed to demonstrate practical skills in:
 
@@ -95,7 +95,7 @@ Two database users were created following the *principle of least privilege*:
 
 ---
 
-🧑‍💻 Technologies Used
+## 🧑‍💻 Technologies Used
     Databases
 
     MySQL
@@ -110,7 +110,9 @@ Two database users were created following the *principle of least privilege*:
 
     MySQL Workbench
 
-👤 About Me
+---
+
+## 👤 About Me
 
     I’m Áron Perczel – an aspiring Database Developer & Data Engineer with a strong interest in:
 
@@ -124,11 +126,15 @@ Two database users were created following the *principle of least privilege*:
 
     cooperative work with data science teams
 
-📫 Contact
+---
+
+## 📫 Contact
 
     📧 Email: perczel.aron@gmail.com
 
     🔗 LinkedIn: https://www.linkedin.com/in/aronperczel/
+
+---
 
 🎉 Thank you for reviewing this project!
 
