@@ -29,7 +29,7 @@ The project includes a complete ER diagram and schema export created using dbdia
 
 📁 1. data_model/
 
-    bookstore_er_diagram.png
+    bookstore_er_diagram.jpg
 
     bookstore_schema.sql
 
