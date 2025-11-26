@@ -74,16 +74,13 @@ Handles:
 
 ## 🔄 Triggers
 
-Features:
-    ✔ Backup mechanism
-    ✔ Prevents double-deduction
-    ✔ Ensures consistency when orders bypass stored procedures
+Automatic inventory update when order_items are inserted outside the procedure.
 
 ---
 
 ## 👁️ Views
 
-`vw_customer_orders` joins customers, orders, and ordered books into a single analytical structure.
+Joins customers, orders, and ordered books into a single analytical structure.
 
 ---
 
@@ -138,3 +135,5 @@ Two database users were created following the *principle of least privilege*:
 Feel free to explore the folders, scripts, and documentation.
 
 [![View on GitHub](https://img.shields.io/badge/View%20Source%20on-GitHub-black?style=for-the-badge&logo=github)](https://github.com/PerczelAron/Online-Book-store)
+
+---
