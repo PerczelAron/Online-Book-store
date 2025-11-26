@@ -136,7 +136,7 @@ Two database users were created following the *principle of least privilege*:
 
 ---
 
-🎉 Thank you for reviewing this project!
+## 🎉 Thank you for reviewing this project!
 
 Feel free to explore the folders, scripts, and documentation.
 
