@@ -88,11 +88,7 @@ Includes:
 
 📁 4. python_scripts/
 
-    data_cleaning.ipynb
-
-    load_data_to_mysql.ipynb
-
-    mysql_connection_setup.py
+    book_store_etl.ipynb
 
     requirements.txt
 
@@ -101,20 +97,18 @@ Capabilities:
     ✔ Missing value handling
     ✔ Duplicate removal
     ✔ Automatic type correction
-    ✔ Safe MySQL loading via mysql-connector-python
+    ✔ Safe MySQL loading via pymysql
 
 ⚙️ 5. Stored Procedures
 
 📁 5. stored_procedures/
 
-    sp_create_order_with_warehouse.sql
+    stored_procedures.sql
 
 Features:
     ✔ Transaction handling
     ✔ Multi-item orders
-    ✔ Warehouse-level inventory deduction
     ✔ Error checks
-    ✔ Safe rollback logic
 
 🔄 6. Triggers
 
@@ -143,7 +137,7 @@ Shows:
 
 📁 8. permissions_and_roles/
 
-    Managing_privileges.sql
+    managing_privileges.sql
 
 🖼️ 9. Screenshots
 
@@ -156,8 +150,6 @@ Contains documentation images:
 
     Stored procedure executions
 
-    Cloud instance setup pages
-
     Query outputs
 
 🧑‍💻 Technologies Used
@@ -165,21 +157,15 @@ Contains documentation images:
 
     MySQL
 
-    Azure Database for MySQL
-
     Programming
 
-    Python: Pandas, NumPy, mysql-connector-python
+    Python: Pandas, NumPy, pymysql
 
     Tools
 
     dbdiagram.io
 
     MySQL Workbench
-
-    Power BI (optional reporting)
-
-    GitHub Pages
 
 👤 About Me
 
