@@ -1,7 +1,7 @@
 # Bookstore Database Project  
 *A complete SQL + Python ETL + Data Governance portfolio project*
 
-![Hero Banner](assets/hero_banner.png)
+![Hero Banner](assets/hero.png)
 
 ---
 
