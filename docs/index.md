@@ -44,11 +44,28 @@ Includes:
 - Indexing strategy
 - Governance notes on referential integrity & quality
 
+### Download SQL file
+
+- [Create Tables.sql](./assets/Create Tables.sql)
+
 ---
 
 ## 📊 Sample Data (CSV)
 
 Realistic data for all tables, including well-known authors and book titles, plus intentionally injected data quality issues to demonstrate governance skills.
+
+### Download Sample Data
+
+- [Authorss.csv](./assets/authors.csv)
+- [Books.csv](./assets/books.csv)
+- [Books_genres.csv](./assets/book_genres.csv)
+- [Customers.csv](./assets/customers.csv)
+- [Genres.csv](./assets/genres.csv)
+- [Inventory.csv](./assets/inventory.csv)
+- [Orders.csv](./assets/orders.csv)
+- [Order_items.csv](./assets/order_items.csv)
+- [Payments.csv](./assets/payments.csv)
+- [Warehouses.csv](./assets/warehouses.csv)
 
 ---
 
