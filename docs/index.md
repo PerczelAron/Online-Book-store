@@ -33,6 +33,10 @@ The project includes a complete ER diagram and schema export created using dbdia
 
 The model follows normalized design (3NF), supports multiple genres per book, warehouse-level inventory tracking, and a realistic order management workflow.
 
+### Download SQL file
+
+- [Schema.sql](./assets/schema.sql)
+
 ---
 
 ## 🗄️ MySQL Schema
@@ -46,7 +50,9 @@ Includes:
 
 ### Download SQL file
 
-- [Create Tables.sql](./assets/Create Tables.sql)
+- [Create_tables.sql](./assets/create_tables.sql)
+- [Indexes.sql](./assets/Indexes.sql)
+- [Sample_queries.sql](./assets/sample_queries.sql)
 
 ---
 
@@ -78,6 +84,10 @@ Capabilities:
 - Automatic type correction
 - Safe MySQL loading via pymysql
 
+### Download python file
+
+- [Book_store_etl.ipynb](./assets/book_store_etl.ipynb)
+
 ---
 
 ## ⚙️ Stored Procedures
@@ -85,7 +95,11 @@ Capabilities:
 Handles:
 - Order creation  
 - Multi-item order insertion  
-- Transaction-safe logic  
+- Transaction-safe logic
+
+### Download SQL file
+
+- [Stored_procedures.sql](./assets/stored_procedures.sql)
 
 ---
 
@@ -93,11 +107,19 @@ Handles:
 
 Automatic inventory update when order_items are inserted outside the procedure.
 
+### Download SQL file
+
+- [Triggers.sql](./assets/triggers.sql)
+
 ---
 
 ## 👁️ Views
 
 Joins customers, orders, and ordered books into a single analytical structure.
+
+### Download SQL file
+
+- [Views.sql](./assets/Views.sql)
 
 ---
 
@@ -109,6 +131,10 @@ Two database users were created following the *principle of least privilege*:
 |------------------|-------------|
 | `readonly_user`  | SELECT only |
 | `data_entry_user`| INSERT into orders + order_items |
+
+### Download SQL file
+
+- [Managing_privileges.sql](./assets/managing_privileges.sql)
 
 ---
 
@@ -154,9 +180,5 @@ Two database users were created following the *principle of least privilege*:
 ---
 
 ## 🎉 Thank you for reviewing this project!
-
-Feel free to explore the folders, scripts, and documentation.
-
-[![View on GitHub](https://img.shields.io/badge/View%20Source%20on-GitHub-black?style=for-the-badge&logo=github)](https://github.com/PerczelAron/Online-Book-store)
 
 ---
