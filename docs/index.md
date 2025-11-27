@@ -106,7 +106,7 @@ Automatic inventory update when order_items are inserted outside the procedure.
 
 ### Download SQL file
 
-- [Triggers.sql](./assets/triggers.sql)
+- [Triggers.sql](./assets/Triggers.sql)
 
 ---
 
