@@ -59,7 +59,7 @@ Realistic data for all tables, including well-known authors and book titles, plu
 
 ### Download Sample Data
 
-- [Authorss.csv](./assets/authors.csv)
+- [Authors.csv](./assets/authors.csv)
 - [Books.csv](./assets/books.csv)
 - [Books_genres.csv](./assets/book_genres.csv)
 - [Customers.csv](./assets/customers.csv)
