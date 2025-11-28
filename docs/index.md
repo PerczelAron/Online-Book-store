@@ -118,9 +118,12 @@ Automatic inventory update when order_items are inserted outside the procedure.
 
 Joins customers, orders, and ordered books into a single analytical structure.
 
-### Download SQL file
+![View_output](assets/view_output.jpg)
+
+### Download files
 
 - [Views.sql](./assets/Views.sql)
+- [View_output](.assets/view_output.jpg)
 
 ---
 
