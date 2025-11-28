@@ -123,7 +123,7 @@ Joins customers, orders, and ordered books into a single analytical structure.
 ### Download files
 
 - [Views.sql](./assets/Views.sql)
-- [View_output](.assets/view_output.jpg)
+- [View_output.jpg](./assets/view_output.jpg)
 
 ---
 
