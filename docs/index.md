@@ -83,7 +83,7 @@ Capabilities:
 
 ### Download python file
 
-- [Book_store_etl.ipynb](./assets/book_store_etl.ipynb)
+- [Book_store_etl.zip](./assets/book_store_etl.zip)
 
 ---
 
