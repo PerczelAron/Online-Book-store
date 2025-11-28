@@ -33,6 +33,10 @@ The project includes a complete ER diagram and schema export created using dbdia
 
 The model follows normalized design (3NF), supports multiple genres per book, warehouse-level inventory tracking, and a realistic order management workflow.
 
+### Download ER diagram in jpg
+
+- [ER_diagram.jpg](./assets/er_diagram.jpg)
+
 ---
 
 ## 🗄️ MySQL Schema
