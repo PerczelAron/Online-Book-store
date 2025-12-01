@@ -85,9 +85,13 @@ Capabilities:
 - Automatic type correction
 - Safe MySQL loading via pymysql
 
-### Download python file
+### Download python notebook file
 
 - [Book_store_etl.zip](./assets/book_store_etl.zip)
+
+### View the notebook file content in pdf
+
+- [Book_store_etl.pdf](./assets/Book_store_etl.pdf)
 
 ---
 
