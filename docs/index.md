@@ -91,7 +91,7 @@ Capabilities:
 
 ### View the notebook file content in pdf
 
-- [Book_store_etl.pdf](./assets/Book_store_etl.pdf)
+- [Book_store_etl.pdf](./assets/book_store_etl.pdf)
 
 ---
 
